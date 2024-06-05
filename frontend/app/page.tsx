@@ -10,8 +10,8 @@ export default function Home() {
   };
   type mutableUser = optional<user>;
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Danish</p>
+    <main className="">
+      <header className="bg-gray w-full h-25">Hello world</header>
     </main>
   );
 }
