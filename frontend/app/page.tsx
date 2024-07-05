@@ -1,3 +1,5 @@
+import Portfolio from "../tags/Portfolio";
+
 export default function Home() {
   type optional<Type> = {
     [Property in keyof Type]+?: Type[Property];
@@ -10,8 +12,8 @@ export default function Home() {
   };
   type mutableUser = optional<user>;
   return (
-    <main className="">
-      <header className="bg-gray w-full h-25">Hello world</header>
+    <main className=" flex justify-center align-middle items-center pt-6">
+      <Portfolio />
     </main>
   );
 }
