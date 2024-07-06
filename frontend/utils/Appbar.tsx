@@ -12,7 +12,7 @@ const Appbar = () => {
           <Logo />
         </div>
         <div className="flex items-center justify-center space-x-4">
-          <div className="w-7 h-7  rounded-full flex justify-center bg-slate-700 dark:bg-slate-500  align-middle">
+          <div className="">
             <ThemeSwitch />
           </div>
           <Avatar
