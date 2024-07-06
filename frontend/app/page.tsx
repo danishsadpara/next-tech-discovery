@@ -1,4 +1,5 @@
-import Portfolio from "../tags/Portfolio";
+import Avatar from "../utils/Avatar";
+import Tag from "../utils/Tag";
 
 export default function Home() {
   type optional<Type> = {
@@ -12,8 +13,9 @@ export default function Home() {
   };
   type mutableUser = optional<user>;
   return (
-    <main className=" flex justify-center align-middle items-center pt-6">
-      <Portfolio />
+    <main className=" flex justify-center align-middle items-center pt-6 space-x-6">
+      <Avatar />
+      <Tag name="Muhammad Murtaza Danish" />
     </main>
   );
 }
