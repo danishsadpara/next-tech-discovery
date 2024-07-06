@@ -1,14 +1,20 @@
 import Image from "next/image";
 import React from "react";
 
-const Avatar = () => {
+interface AvatarProps {
+  source: string;
+  altText: string;
+  width: number;
+  height: number;
+}
+const Avatar: React.FC<AvatarProps> = ({ source, altText, width, height }) => {
   return (
     <Image
-      src={"/self.jpg"}
-      alt="profile picture"
-      className="object-cover rounded-full"
-      width={30}
-      height={30}
+      src={source}
+      alt={altText}
+      className="object-cover rounded-full "
+      width={width}
+      height={height}
     />
   );
 };

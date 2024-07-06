@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
 import Image from "next/image";
 import Logo from "./Logo";
+import Avatar from "./Avatar";
 
 const Appbar = () => {
   return (
@@ -10,8 +11,16 @@ const Appbar = () => {
         <div>
           <Logo />
         </div>
-        <div className="w-9 h-9 flex rounded-lg items-center justify-center bg-slate-100 dark:bg-slate-500  align-middle">
-          <ThemeSwitch />
+        <div className="flex items-center justify-center space-x-4">
+          <div className="w-7 h-7  rounded-full flex justify-center bg-slate-700 dark:bg-slate-500  align-middle">
+            <ThemeSwitch />
+          </div>
+          <Avatar
+            source="/self.jpg"
+            altText="self avtar"
+            width={40}
+            height={40}
+          />
         </div>
       </div>
     </nav>
