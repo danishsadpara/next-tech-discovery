@@ -6,7 +6,7 @@ import Avatar from "./Avatar";
 
 const Appbar = () => {
   return (
-    <nav className="bg-gray-800 dark:bg-slat-300">
+    <nav className="bg-slate-200 dark:bg-slate-700">
       <div className="flex justify-between items-center px-6 py-3">
         <div>
           <Logo />

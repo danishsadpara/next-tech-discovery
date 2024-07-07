@@ -17,19 +17,17 @@ export const ThemeSwitch = () => {
   }
 
   return (
-    <div className="flex  p-2 bg-slate-500 dark:bg-slate-700  rounded-full">
+    <div className="flex  p-2 ">
       <button
         onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
       >
         {theme === "light" ? (
           <div className="flex space-x-1 ">
-            <MoonIcon className="h-6 w-6" />
-            <p className="font-semibold ">Dark</p>
+            <MoonIcon className="h-6 w-6 text-slate-500" />
           </div>
         ) : (
           <div className="flex space-x-1">
             <SunIcon className="h-6 w-6" />
-            <p className="font-semibold">Light</p>
           </div>
         )}
       </button>
