@@ -2,14 +2,14 @@ import React from "react";
 import Avatar from "../../utils/Avatar";
 import Tag from "../../utils/Tag";
 
-const page = () => {
+const Resume = () => {
   const user = {
     avatar: "/self.jpg",
     name: "Muhammad Murtaza Danish",
     nationality: "Pakistani",
     gender: "Male",
     email: "danishsadpara@gmail.com",
-    phone: "+1234567890",
+    phone: "+92 312 0078619",
     address: "House no. 547, street no. 54, sector i-10/1 Islamabad",
   };
 
@@ -31,9 +31,9 @@ const page = () => {
           </button>
         </div>
       </div>
-      <div className="mx-24 my-5 p-5 shadow-2xl rounded-lg">
+      <div className="mx-5 md:mx-24  my-5 p-5 shadow-2xl   rounded-2xl w-auto">
         {/* Header Section */}
-        <div className="flex space-x-10  items-center">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10 md:items-center ">
           <div>
             <Avatar
               source="/self.jpg"
@@ -82,7 +82,9 @@ const page = () => {
             <p className="text-sm">
               PIXAKO TECHNOLOGIES PVT, Islamabad (Pakistan)
             </p>
-            <p className="text-xs text-gray-600">01/02/2016 - till now</p>
+            <p className="text-xs text-gray-600">
+              01/02/2016 - <span className="text-blue-500">present</span>
+            </p>
           </div>
         </div>
 
@@ -92,15 +94,14 @@ const page = () => {
             LANGUAGE SKILLS
           </h2>
           <div className="space-y-1 mt-4">
-            <p className="font-bold">Shina (Mother tongue)</p>
-            <p className="font-bold ">Urdu</p>
             <p className="font-bold ">English</p>
-
-            <div className="flex space-x-2 text-sm">
-              <div>Understanding: B1</div>
-              <div>Speaking: B1</div>
-              <div>Writing: B1</div>
+            <div className=" space-x-1 text-sm">
+              <p>Understanding: B1 | Speaking: B1 | Writing: B1 </p>
             </div>
+            <p className="font-bold ">Urdu</p>
+            <p className="">
+              <span className="font-bold"> Shina</span> (Mother tongue)
+            </p>
           </div>
         </div>
 
@@ -139,4 +140,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Resume;

@@ -1,5 +1,6 @@
 import Avatar from "../utils/Avatar";
 import Tag from "../utils/Tag";
+import Resume from "./resume/page";
 
 export default function Home() {
   type optional<Type> = {
