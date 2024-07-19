@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
 import Image from "next/image";
 import Logo from "./Logo";
 import Avatar from "./Avatar";
+import { CogIcon } from "@heroicons/react/24/solid";
 
 const Appbar = () => {
   return (
@@ -15,12 +17,15 @@ const Appbar = () => {
           <div className="">
             <ThemeSwitch />
           </div>
-          <Avatar
-            source="/self.jpg"
-            altText="self avtar"
-            width={40}
-            height={40}
-          />
+          <div className="relative">
+            <Avatar
+              source="/self.jpg"
+              altText="self avatar"
+              width={40}
+              height={40}
+            />
+            <CogIcon className="h-4 w-4 text-white absolute -bottom-0.5 -right-0.5 bg-black rounded-full" />
+          </div>
         </div>
       </div>
     </nav>
