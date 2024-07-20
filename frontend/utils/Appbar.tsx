@@ -24,7 +24,7 @@ const Appbar = () => {
               width={40}
               height={40}
             />
-            <CogIcon className="h-4 w-4 text-white absolute -bottom-0.5 -right-0.5 bg-black rounded-full" />
+            <CogIcon className="h-4 w-4 text-yellow-500 dark:text-white absolute -bottom-0.5 -right-0.5 cursor-pointer " />
           </div>
         </div>
       </div>
